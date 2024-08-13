@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="job.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Portal</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="DOBad">Date Of Birth</label>
+                <input type="date" id="DOB" name="DOB" >
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="Email" name="email" >
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="number" name="phone" >
+            </div>
+            <div class="form-group">
+                <label>Educational Qualifications</label>
+              <select name="EQ" id="EDU">
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="B.E">B.E</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="Address" name="address" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="myfile" name="resume" >
+            </div>
+            <div class="form-group">
+                <label for="cover-letter">Experieance</label>
+                <textarea id="experience" name="cover-letter" rows="3"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
